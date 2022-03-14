@@ -3,13 +3,10 @@
 var canvas = document.getElementById("pixelCanvas");
 var color = document.getElementById("colorPicker");
 var sizePicker = document.getElementById("sizePicker");
-
 // *** Canvas size and color *** //
 var height = document.getElementById("inputHeight");
 var width = document.getElementById("inputWidth");
-
 // ****** //
-
 //Create the grid and listed for mouse events
 function makeGrid(height, width) {
   for (let y = 0; y < height; y++) {
@@ -26,7 +23,6 @@ function makeGrid(height, width) {
     }
   }
 }
-
 //function that uses the size picker submit to call makeGrid() funtion
 sizePicker.addEventListener("submit", function (clickCell) {
   clickCell.preventDefault();
